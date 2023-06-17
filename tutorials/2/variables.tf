@@ -1,1 +1,6 @@
-/* https://developer.hashicorp.com/terraform/tutorials/docker-get-started/docker-variables */
+variable "container_name" {
+  type        = string
+  default     = "cvwa_container"
+  description = "Value of the name for the Docker container"
+}
+

@@ -26,7 +26,7 @@ resource "docker_image" "cvwa_image" {
 
 resource "docker_container" "cvwa_container" {
   image = docker_image.cvwa_image.image_id
-  name  = "cvwa_container"
+  name  = var.container_name
 
   ports {
     internal = 80
